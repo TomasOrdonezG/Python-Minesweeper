@@ -1,12 +1,7 @@
 import random, pygame, math, time, os
 from datetime import date
-from pygame import mixer
 
 pygame.init()
-mixer.init()
-
-mixer.music.load('boom.wav')
-mixer.music.set_volume(1)
 
 #create screen/canvas
 cnvl = 700
@@ -23,7 +18,7 @@ MINE = '9'
 MINE_COUNT = 0
 mines = 0
 
-DEATH_SCREEN = False
+DEATH_SCREEN = True
 
 # image mode
 roman = True
@@ -302,7 +297,6 @@ def display_result(win, frames):
   if not win:
     # lose
     if frames == 1:
-      mixer.music.play()
       cat = pygame.image.load('silly/' + random.choice(os.listdir("silly")))
     cat = pygame.transform.scale(cat, (cnvl, cnvh))
     canvas.blit(cat, (0, 0))
