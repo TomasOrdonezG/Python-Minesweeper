@@ -388,12 +388,6 @@ def display_mines(cover_list, board, frames):
 def main():
   global playing, keep_playing, start, MINE_COUNT, mines
   number_of_mines = s ** 2 * MINE_DENSITY
-  '''get trolled lmfao loser no bitches, gets no pussy or dick L how can you not
-  sorry that was very mean i love you so much you gorgeos human being. you amaze me everyday and i will write it with every language i know
-  mmy love, my darling, my sweet, my honey, my baby, my sweetie, my best friend, my boyfriend, mi novio, wo de nanpengyou, mon amour, watashino kanojo tu est tellement special!
-  you make me feel so safe and happy, i feel so authentic and real with you and sometimes you feel too unreal im worried you'll leave, i guess it feels you are
-  the person of my dreams and i feel like im floating around you.
-  love you, biaozi <3333333333333'''
   generated = False
   first_click = False
   MINE_COUNT = 0
